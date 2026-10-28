@@ -1,0 +1,149 @@
+.review-list-container {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.review-list-container h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-list-loading,
+.review-list-empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.review-list-empty p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.review-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.2s;
+}
+
+.review-list-item:hover {
+  border-color: #4CAF50;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.1);
+}
+
+.review-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.review-item-route {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.route-from,
+.route-to {
+  color: #4CAF50;
+}
+
+.route-arrow {
+  color: #999;
+}
+
+.review-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.review-item-date {
+  color: #999;
+}
+
+.review-item-person {
+  color: #555;
+  font-weight: 500;
+}
+
+.review-btn {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.review-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.review-btn:active {
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-list-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .review-btn {
+    width: 100%;
+  }
+
+  .review-item-route {
+    font-size: 14px;
+  }
+
+  .review-item-details {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-list-container {
+    padding: 15px;
+  }
+
+  .review-list-container h3 {
+    font-size: 18px;
+  }
+
+  .review-list-item {
+    padding: 12px;
+  }
+}

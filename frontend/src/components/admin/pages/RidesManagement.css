@@ -1,0 +1,346 @@
+.rides-management-page {
+    width: 100%;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    background: white;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filter-tab {
+    flex: 1;
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #64748b;
+    transition: all 0.3s;
+}
+
+.filter-tab:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.filter-tab.active {
+    background: #3b82f6;
+    color: white;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+/* Rides Grid */
+.rides-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* Ride Card */
+.ride-card {
+    background: white;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ride-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ride-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ride-id {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.ride-status {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Route Display */
+.ride-route {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.route-point {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.route-line {
+    width: 2px;
+    height: 20px;
+    background: linear-gradient(180deg, #10b981 0%, #ef4444 100%);
+    margin-left: 7px;
+}
+
+/* Ride Details */
+.ride-details {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.detail-item svg {
+    color: #94a3b8;
+}
+
+/* Driver Info */
+.ride-driver {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.driver-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.driver-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.driver-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.vehicle-info {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* View Details Button */
+.view-details-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.view-details-btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+/* Modal Styles */
+.modal-content.large {
+    max-width: 800px;
+}
+
+.detail-section {
+    margin-bottom: 24px;
+}
+
+.detail-section h4 {
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1e293b;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.detail-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Passengers List */
+.passengers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.passenger-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.passenger-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.passenger-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.passenger-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.booking-status {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.seats-booked {
+    font-size: 13px;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+/* Modal Actions */
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 20px;
+    border-top: 2px solid #f1f5f9;
+}
+
+.cancel-ride-btn {
+    padding: 12px 24px;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.cancel-ride-btn:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .rides-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .rides-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-tabs {
+        flex-wrap: wrap;
+    }
+
+    .ride-details {
+        flex-direction: column;
+    }
+
+    .modal-content.large {
+        width: 95%;
+    }
+}
